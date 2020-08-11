@@ -3,7 +3,7 @@ import React from "react";
 function App() {
   return (
     <div className="container">
-      <h1>Hello Firebase</h1>
+      <h1>Hello Firebase Updated</h1>
     </div>
   );
 }
