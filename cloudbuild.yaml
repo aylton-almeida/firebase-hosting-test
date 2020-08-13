@@ -8,5 +8,5 @@ steps:
     args: ["run", "build"]
 
   # Deploy
-  - name: gcr.io/firebase-hosting-286313/firebase
-    args: ["deploy", "--project=firebase-hosting-286313", "--only=hosting"]
+  - name: "gcr.io/firebase-hosting-286313/firebase"
+    args: ["deploy", "--only=hosting"]
