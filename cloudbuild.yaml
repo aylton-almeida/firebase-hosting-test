@@ -9,4 +9,5 @@ steps:
 
   # Deploy
   - name: "gcr.io/firebase-hosting-286313/firebase"
-    args: ["deploy"]
+    entrypiont: "bash"
+    args: ["deploy", "&&", "ls"]
