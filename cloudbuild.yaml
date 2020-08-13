@@ -2,12 +2,12 @@ steps:
   # Install
   - name: "gcr.io/cloud-builders/yarn"
     entrypoint: "yarn"
-    args: ["install"]
+    args: ["install", "--ignore-engines"]
 
   # Build
   - name: "gcr.io/cloud-builders/yarn"
     entrypoint: "yarn"
-    args: ["build"]
+    args: ["build", "--ignore-engines"]
 
   # Deploy
   - name: gcr.io/firebase-hosting-286313/firebase
