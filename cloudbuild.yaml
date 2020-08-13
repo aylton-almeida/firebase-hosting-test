@@ -10,5 +10,6 @@ steps:
     args: ["build", "--ignore-engines"]
 
   # Deploy
+
   - name: gcr.io/firebase-hosting-286313/firebase
-    args: ["deploy"]
+    args: ["deploy", "-p ./build"]
