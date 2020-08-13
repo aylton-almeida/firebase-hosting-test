@@ -9,6 +9,10 @@ steps:
     entrypoint: "yarn"
     args: ["build", "--ignore-engines"]
 
+  # Ls
+  - name: "gcr.io/cloud-builders/gcloud:latest"
+    entrypoint: "ls"
+
   # Deploy
-  - name: gcr.io/firebase-hosting-286313/firebase
+  - name: "gcr.io/firebase-hosting-286313/firebase"
     args: ["deploy"]
