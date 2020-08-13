@@ -11,4 +11,5 @@ steps:
 
   # Deploy
   - name: gcr.io/firebase-hosting-286313/firebase
-    args: ["deploy", "-p buildTest"]
+    args: ["deploy"]
+    dir: "build"
